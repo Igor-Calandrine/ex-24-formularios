@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fieldset e Legend</title>
+</head>
+<body>
+    <h1>Fieldset e Legend</h1>
+    <p>Pode-se acrescentar um Campo e uma Legenda para deixar mais organizado para o usuário</p>
+
+    <fieldset>
+        <legend>Usuário</legend>
+        
+        <form action="teste.html" method="get" autocomplete="on">
+        <p><label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" maxlength="40" size="20" required></p>
+        
+        <p><label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" maxlength="40" size="40" required></p>
+
+        <fieldset>
+            <legend>Contato</legend>
+            
+            <p><label for="email">Email:</label>
+                <input type="email" name="email" id="email"></p>
+            
+            <p><label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel"></p>
+        </fieldset>
+        
+        </form>
+    </fieldset>
+    
+</body>
+</html>
