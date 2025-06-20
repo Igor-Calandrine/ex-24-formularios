@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Range File</title>
+</head>
+<body>
+    <h1>Color Range File</h1>
+    <p>Range - pode-se limitar o range com:</p>
+        <ul>
+            <li>max</li>
+            <li>min</li>
+        </ul>
+    
+    <p>File - deve-se usar o método <strong>post</strong> para enviar imagens</p>
+
+    <fieldset>
+        <legend>Cores</legend>
+    <form action="teste.html" method="post" autocomplete="on">
+        <p><label for="cor">Escolha uma cor:</label></p>
+            <p><input type="color" name="cor" id="cor"></p>
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Satisfação</legend>
+        <p>Qual seu nível de satisfação?</p>
+        <p><input type="range" name="satis" id="satis" min="1" max="10" value="8"></p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Arquivo</legend>
+        <p>Envie o arquivo abaixo</p>
+        <p><input type="file" name="file" id="file"></p>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+
+    </form>
+    
+</body>
+</html>
