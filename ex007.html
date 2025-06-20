@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Data</title>
+</head>
+<body>
+    <h1>Select</h1>
+    <p>Usa-se <strong>select</strong> para abrir uma aba em que o usuário terá determinadas opções</p>
+    <p>Dentro do <strong>select</strong> coloca-se as opções com <strong>option</strong>.</p>
+    <p>Tamém pose-se dividir as opções em grupos com <strong>optgroup</strong> e distinguí-las com <strong>label</strong> dentro da tag.</p>
+
+    <form action="teste.html">
+        <fieldset>
+            
+            <p><label for="uf">Estados:</label> 
+            <select name="UF" id="uf">
+                <option value="MG">Minas Gerais</option>
+                <option value="SP">São Paulo</option>
+                <option value="ES">Espírito Santo</option>
+
+                <optgroup label="Estados do Norte">
+                    <option value="PA">Pará</option>
+                    <option value="MG">Amazônas</option>
+                    <option value="RR">Roraima</option>
+                </optgroup>
+            </select></p>
+    
+        </fieldset>
+    </form>
+
+    <h1>Datalist</h1>
+    <p>Pode-se oferecer ao usuário uma lista de possibilidades e sugestões já utilizadas pelo usuário.</p>
+    
+    <form action="teste.html" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Ocupação</legend>
+            <label for="prof">Profissão:</label> 
+                <input type="text" name="prof" id="prof" list="lprof" required>
+            <datalist id="lprof">
+                <option value="eletricista">Eletricista</option>
+                <option value="mecanico">Mecânico</option>
+                <option value="vigia">Vigia</option>
+                <option value="medico">Médico</option>
+                <option value="enfermeira">Enfermeira</option>
+            </datalist>
+        </fieldset>
+    </form>
+
+    <h1>TextArea</h1>
+    <p>Uma área pode ser inserida para o usuário enviar um texto.</p>
+    <p>Recomenda-se a utilização do método <strong>POST</strong> devido a limitação de 3000 caracteres.</p>
+
+    <fieldset>
+        <legend>Experiência</legend>
+        <p><label for="textarea">Texto:</label></p>
+        <form action="teste.html" method="post">
+            <textarea name="textarea" id="textarea" cols="70" rows="10" placeholder="Digite uma mensagem"></textarea>
+        </form>
+    </fieldset>
+
+
+    
+</body>
+</html>
