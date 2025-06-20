@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <h1>Checkbox e Radio</h1>
+    <p>É importante que os elementos no Radio tenham o mesmo nome para que seja reconhecido seu vínculo na escolha do usuário, e assim apenas uma das alternativas esteja selecionada.</p>
+    <p>Pode-se já deixar marcado com <strong>checked</strong></p>
+
+
+    <fieldset>
+        <legend>Esportes</legend>
+    <form action="teste.html" method="get" autocomplete="on">
+        <input type="checkbox" name="futebol" id="futebol"><label for="futebol">Futebol</label>
+        <input type="checkbox" name="volei" id="volei"><label for="volei">Volei</label> <br>
+        <input type="checkbox" name="natacao" id="natacao" checked><label for="natacao">Natação</label>
+        <input type="checkbox" name="judo" id="judo"><label for="judo">Judô</label> <br>
+        <input type="checkbox" name="salto" id="salto"><label for="salto">Salto D</label>   
+        <input type="checkbox" name="tennis" id="tennis"><label for="tennis">Tênnis</label>
+
+        <p><input type="submit" value="Enviar">
+           <input type="reset" value="Limpar"></p>
+    </form>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Gênero</legend>
+        <form action="teste.html" method="get" autocorrect="off">
+            <label for="masc"><input type="radio" name="genero" id="masc">Masculino</label> <br>
+            <input type="radio" name="genero" id="fem"><label for="fem">Feminino</label> <br>
+            <input type="radio" name="genero" id="nulo"><label for="nulo">Nenhum</label>
+
+
+
+
+
+
+        </form>
+    </fieldset>
+
+    
+</body>
+</html>
