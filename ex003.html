@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novos Parâmetros</title>
+</head>
+<body>
+    <h1>Novos Parâmetros</h1>
+    <p><strong>Parâmetros para controle de caracteres</strong></p>
+    <ul>
+        <li>minlength</li>
+        <li>maxlength</li>
+        <li>required</li>
+        <li>min</li>
+        <li>max</li>
+        <li>step</li>
+    </ul>
+
+    <form action="teste.html" method="get">
+        <p><label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" minlength="4" maxlength="8" required></p>
+        <p><label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome"></p>
+        <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+    </form>
+
+    <p><strong>Parâmetro para tamanho do blobo input</strong></p>
+    <ul>
+        <li>size</li>
+    </ul>
+    <form action="teste.html" method="post">
+        <p><label for="nome2">Nome:</label>
+            <input type="text" name="nome2" id="nome2" size="50" required></p>
+        <p><label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" size="12" required></p>
+        <p><input type="submit" value="Enviar 2"> <input type="reset" value="Limpar 2"></p>
+
+    </form>
+    
+    <p><strong>Parâmetro para auto completar</strong></p>
+    <ul>
+        <li>autocomplete no form</li>
+        <li>autocomplete no input para especificar</li>
+    </ul>
+
+    <form action="teste.html" method="get" autocomplete="on">
+        <p><label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" maxlength="10" size="20" autocomplete="tel"></p>
+        
+        <p><label for="email">Email:</label>
+                <input type="email" name="email" id="email" minlength="5" maxlength="20" size="30" autocomplete="email"></p>
+        <p><input type="submit" value="Enviar 3"> <input type="reset" value="Limpar 3"></p>
+    </form>
+
+    <p><strong>Deixar mensagem de dica</Strong></p>
+        <ul>
+            <li>placeholder</li>
+
+        </ul>
+
+    <form action="teste.html" method="get" autocomplete="on">
+        <p><label for="mes">Mês:</label>
+            <input type="month" name="mes" id="mes" placeholder="Month" size="10"></p>
+            
+        <p><label for="data">Data</label>
+            <input type="date" name="data" id="data"></p>
+                
+        <p><label for="media">Média:</label>
+            <input type="number" name="media" id="media" min="0" max="10" step="0.5"></p>
+        
+        <p><label for="check">Natação</label>
+            <input type="checkbox" name="check" id="check"></p>
+
+        <p><label for="color">Color</label>    
+            <input type="color" name="color" id="color"></p>
+
+        <input type="submit" value="Enviar 4"> <input type="reset" value="Limpar 4">
+    </form>
+    
+</body>
+</html>

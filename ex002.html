@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET e POST</title>
+</head>
+<body>
+    <h1>GET</h1>
+    <p>Nunca utilizar para envio de dados sensíveis</p>
+    <p>Os dados ficam na URL</p>
+    <p>Limite de 3000 bytes ou seja 3000 letras</p>
+    <p>Não envia imagens</p>
+    
+    <form action="cadastro.php" method="get">
+    <p><label for="inome">Nome:</label> 
+        <input type="text" name="nome" id="inome"></p>
+    <p><label for="isobrenome">Sobrenome:</label> 
+        <input type="text" name="sobrenome" id="isobrenome"></p>
+    <input type="submit" value="Enviar">
+    </form>
+
+    <h1>POST</h1>
+    <p>Não expõe os dados na URL</p>
+    <p>Usado para enviar dados confidenciais ou grandes</p>
+    <p>Não é cacheado por segurança</p>
+    <p>É possivel ainda encontrar os dados nas ferramentas do desenvolvedor, para que os dados não sejam visíveis eles devem ser criptografados.</p>
+
+
+    <form action="cadastro.php" method="post">
+        <p><label for="itel">Telefone:</label> 
+            <input type="tel" name="tel" id="itel"></p>
+        <p><label for="iemail">Email:</label> 
+            <input type="email" name="email" id="iemail"></p>
+        <input type="submit" value="Enviar2">
+    </form>
+
+
+</body>
+</html>
